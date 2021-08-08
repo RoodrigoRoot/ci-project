@@ -24,8 +24,5 @@ jobs:
   test:
     name: Test Python
     needs: build
-
-    steps:
-      - uses: actions/checkout@v2
       run: |
         pytest main.py
