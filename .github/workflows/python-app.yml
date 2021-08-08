@@ -20,11 +20,6 @@ jobs:
       - run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-  test:
-    needs: build
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Test with pytest
+      - name: Python Test
         run: pytest main.py
+  
