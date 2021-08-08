@@ -25,7 +25,6 @@ jobs:
   test:
     name: Test Python
     needs: build
-    run-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
