@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
+
   build:
-    name: Build Python
     run-on: ubuntu-latest
 
     steps:
@@ -22,4 +22,3 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Python Test
         run: pytest main.py
-  
